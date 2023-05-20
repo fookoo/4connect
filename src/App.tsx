@@ -15,8 +15,8 @@ const App = () => {
 
 
   return (<ThemeProvider theme={{}} >
-          <Box p={1}>
-              <Grid container spacing={2}>
+          <Box p={2} pt={10} style={{ background: '#BBB' }}>
+              <Grid container spacing={2} justifyContent="center">
                   {state.map((column) => <Grid item><Column items={column} /></Grid>)}
               </Grid>
           </Box>
